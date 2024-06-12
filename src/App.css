@@ -6,6 +6,9 @@
   /* padding: 2rem; */
   text-align: center;
 }
+.maureen{
+  padding: 8%;
+}
 
 .hero{
   background-color: hsl(356, 73%, 65%);
@@ -16,43 +19,148 @@
 .about{
   background-color:hsl(237, 23%, 32%) ;
   height: 300px;
-  /* margin: 3%; */
   width: 100%;
   border-bottom-left-radius: 10%;
-  border-top-right-radius: 20%;
+  border-top-right-radius: 100px;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  text-align: left;
   display: flex;
   color: white;
+  margin: 10rem 0;
+}
+.about img{
+  width: 100%;
+}
+.phone{
+  width: 50%;
+}
+
+
+.write{
+  width: 48%;
+}
+
+
+.main {
+  margin-top: 3rem;
 }
 .general{
+  width: 100%;
   display: flex;
- 
-  margin: 5%;
-  align-items: center;
-
+ justify-content: space-around;
+ align-items: center;
+}
+.div2{
+  width: 45%;
+  text-align: left;
+  padding-left: 5%;
 }
 .div3{
-  width: 50%;
+  width: 55%;
   height: 30%;
+  overflow-x: hidden;
+}
+.div3 img{
+  width: 120%;
+  margin-right: -45%;
+  overflow-x: hidden;
 }
 .step4{
   display: flex;
-  padding: 10%;
+  /* padding: 10%; */
   margin-top: 10%;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
 }
 .first{
-  width: 50%;
+  width: 54%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.first img{
+  width: 130%;
+  margin-left: -45%;
 }
 .second{
-  justify-content: center;
-  width: 50%;
+  width: 44%;
+  text-align: left;
+  padding-right: 3%;
 }
 .lastpart{
   background-color: hsl(237, 17%, 21%);
   color: white;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+
+  
+}
+ul li{
+  list-style: none;
 }
 
 
+@media (max-width: 678px){
+ 
+ .general{
+  flex-direction:column-reverse;
+  }
+  .div2{
+     width: 100%;
+  }
+  .div3{
+     width: 100%;
+ 
+  }
+  .div3 img{
+     width: 150%;
+     justify-items: center;
+     
+   }
+ .step4{
+  flex-direction: column;
+  padding: 15px;
+ }
+ .first{
+  width: 100%;
+
+ }
+ .first img{
+   width: 200%;
+
+ }
+ .second{
+  width: 100%;
+ }
+ .about{
+  width: 100%;
+  flex-direction: column !important;
+  height: 60vh;
+ }
+ .write{
+  width: 100%;
+  padding: 30px;
+ }
+ .phone img{
+  width: 100%;
+}
+
+ .lastpart{
+  flex-direction: column;
+ border-top-right-radius: 100px;
+}
+.footer1 h1{
+  padding: 2rem;
+}
+.footer2 h3{
+  justify-content: space-around;
+ }
+ .footer2 ul{
+  justify-content: space-between;
+  padding-bottom: 1rem;
+ }
+
+}

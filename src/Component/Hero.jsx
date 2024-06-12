@@ -8,10 +8,12 @@ const Hero = () => {
       <div className="container px-4">
       <NavBar/>
       </div>
+      <div className="maureen">
         <h1>A Modern Publishing Platform</h1>
         <p>grow your audience and build your online brand</p>
         <button className='mt-4 border-0 m-3 rounded'>Start for free</button>
         <button className='mt-4  border-0'>Learn More</button>
+        </div>
         
     </div>
   )

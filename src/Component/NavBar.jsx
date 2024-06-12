@@ -1,7 +1,9 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 
 const NavBar = () => {
+  
   return (
     <>
      <nav className="navbar navbar-expand-lg bg-body-transparent">
@@ -13,18 +15,18 @@ const NavBar = () => {
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="#">Prouduct</a>
+          <NavLink className="nav-link active" aria-current="page" to="/">Product</NavLink>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Company</a>
+          <NavLink className="nav-link" to="/about">Company</NavLink>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Contact</a>
+          <NavLink className="nav-link" to="/detail">Contact</NavLink>
         </li>
         
       </ul>
       <form action="">
-        <button className='border-0'>login</button>
+        <button className='border-0 m-3'>login</button>
         <button className='border-1 rounded '>sign up</button>
       </form>
     </div>
